@@ -14,6 +14,6 @@ public class MyModulithAppApplication {
     public static void main(String[] args) {
         SpringApplication.run(MyModulithAppApplication.class, args)
                 .getBean(ProductService.class)
-                .create(new Product("baeldung", "course", 10));
+                .create(new Product("Ferrari", "car", 10));
     }
 }
