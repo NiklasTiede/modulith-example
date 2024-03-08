@@ -20,7 +20,8 @@ public class ProductService {
     }
 
     public void create(Product product) {
-        notificationService.createNotification(new NotificationDTO(new Date(), "SMS", product.name()));
+        var newProduct = new NotificationDTO(new Date(), "SMS", product.name());
+        notificationService.createNotification(newProduct);
         events.publishEvent(new NotificationDTO(new Date(), "SMS", product.name()));
     }
 }
