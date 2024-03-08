@@ -1,4 +1,9 @@
-package com.example.mymodulithapp.product;
+package com.example.mymodulithapp.product.internal;
 
-public record Product() {
+public record Product(
+
+         String name,
+         String description,
+         int price
+) {
 }

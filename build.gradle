@@ -16,14 +16,21 @@ repositories {
 }
 
 ext {
-    set('springModulithVersion', "1.1.0")
+    set('springModulithVersion', "1.1.2")
 }
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
+
     implementation 'org.springframework.modulith:spring-modulith-starter-core'
+    implementation 'org.springframework.modulith:spring-modulith-events-api'
+
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.modulith:spring-modulith-starter-test'
+
+    // spring-modulith-events-api
+
 }
 
 dependencyManagement {
