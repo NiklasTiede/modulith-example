@@ -8,7 +8,6 @@ import org.springframework.modulith.docs.Documenter;
 @SpringBootTest
 class MyModulithAppApplicationTests {
 
-//    @Test
     void contextLoads() {
     }
 
